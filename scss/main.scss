@@ -1,0 +1,225 @@
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "base";
+
+
+
+
+
+// /*------------------------------------- Header */
+header {}
+
+
+
+/*------------------------------------ Content */
+main {}
+
+    .container {
+        width: 840px;
+        padding: 0 20px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 320px) and (max-width: 840px) {
+            width: 100%;
+        }
+    }
+
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .response-box {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 120px;
+        @include font (28,36,600);
+        color: $main-color;
+        p {
+            padding-top: 36px;
+        }
+
+        &--thanks {
+            margin-top: 306px;
+        }
+
+        &__adress {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+            @include font (18,26,500);
+
+            img {
+                margin-right: 15px;
+            }
+        }
+
+        &__map {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            @include font (18,26,500);
+            text-decoration: none;
+                
+            img {
+                margin-right: 15px;
+            }
+        
+        }
+
+        &__review {
+            width: 100%;
+            height: 230px;
+            margin-top: 46px;
+            @include font (18,26,500);
+            border: 1px solid #00205B;
+            background-color: #F1F3F7;
+            color: $main-color;
+            font-family: 'Montserrat',sans-serif;
+            padding: 20px 0 0 20px;
+            resize: none;
+            
+            &--noperfect {
+                margin-top: 80px;
+            }
+        }
+
+        &__send {
+            width: 100%;
+            height: 60px;
+            margin-top: 16px;
+            background-color: $main-color;
+            @include font (21,29,600);
+            color: #fff;
+            font-family: 'Montserrat',serif;
+
+            &--thanks {
+                margin-top: 32px;
+            }
+        }
+
+    }
+
+    .smile-box {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        
+            &__rating {
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                        
+                    span {
+                        @include font (21,38,500);
+                        padding-top: 16px;
+                        text-align: center;
+                    }
+
+                }
+            }
+    }
+
+/*------------------------------------- Media */
+
+@media screen and (min-width: 320px) and (max-width: 840px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+    .response-box {
+        @include font (16,26);
+        margin-top: 60px;
+
+            &--thanks {
+                margin-top: 252px;
+            }
+
+            p {
+                padding-top: 26px;
+            }
+
+            &__adress {
+                @include font (12,18);
+                   
+                img {
+                    max-width: 10px;
+                    height: auto;
+                }
+            }
+
+            &__map {
+                @include font (12,18);
+                    
+                img {
+                    max-width: 13.33px;
+                    height: auto;
+                }
+            }
+
+            &__review {
+                @include font (12,18);
+                padding: 15px 0 0 15px;
+                margin-top: 54px;
+            }
+
+            &__send {
+                @include font (12,15);
+                height: 36px;
+                margin-top: 8px;
+                
+            }
+    }
+
+    .smile-box {
+        margin-top: 30px;
+            &__rating {
+                a {
+                    width: 32px;
+                    span {
+                        @include font (12,15);
+                        padding-top: 8px;
+                    }
+                }
+            }
+    }
+
+}
+    
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .logo-box {
+                width: 80px;
+                height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------- Footer */
+footer {}
+/*-------------------------------------------  */
+
+
+
